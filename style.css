@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0 auto;
+  background-color: lightgray;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 80px;
+  border-radius: 20px;
+}
+
+.new-task {
+  color: rgb(5, 108, 93);
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.btn-info {
+  color: rgb(5, 108, 93);
+  font-weight: bold;
+  background-color: rgb(16, 242, 204);
+}
+
+.task-name {
+  color: rgb(5, 108, 93);
+}
+
+.description {
+  color: rgb(5, 108, 93);
+}
+
+.assign-to {
+  color: rgb(5, 108, 93);
+}
+
+.due-date {
+  color: rgb(5, 108, 93);
+}
+
+.box {
+  background-color: aliceblue;
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+  padding: 50px;
+  margin: 20px;
+}
+
+.to-do {
+  text-align: center;
+  color: rgb(16, 242, 204);
+}
+
+.buttons {
+  text-align: center;
+  background-color: rgb(16, 242, 204);
+  justify-content: center;
+}
+
+.added-task1 {
+  text-align: center;
+}
