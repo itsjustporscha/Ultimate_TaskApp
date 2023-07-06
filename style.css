@@ -58,3 +58,7 @@ body {
 .added-task1 {
   text-align: center;
 }
+
+.box.container {
+  text-align: center;
+}
