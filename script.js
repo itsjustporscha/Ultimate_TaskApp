@@ -11,9 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const taskName = document.querySelector(".form-control-lg").value;
 
     // Get the task description value
-    const taskDescription = document.querySelector(
-      "#exampleFormControlTextarea1"
-    ).value;
+    const taskDescription = document.querySelector(".form-control-lg").value;
 
     // Get the assignee value
     const assignee = document.querySelector(
@@ -29,16 +27,16 @@ document.addEventListener("DOMContentLoaded", function () {
       description: taskDescription,
       assignee: assignee,
       dueDate: dueDate,
-     };
+    };
 
-    // Call a function to handle the task (e.g., add it to a task list, save it to a database, etc.)
+    // Call a function to handle the task
     handleTask(task);
 
     // Reset the form fields
     form.reset();
   });
 
-  // Function to handle the task (replace with your own logic)
+  // Function to handle the task
   function handleTask(task) {
     // Display the task in the completed tasks section
     const taskContainer = document.querySelector(".box.container");
@@ -70,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to edit a task
   function editTask(taskElement, task) {
-    // Update the task properties (replace with your own logic)
+    // Update the task properties
     const updatedTask = {
       name: "Updated Task Name",
       description: "Updated Task Description",
@@ -83,14 +81,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const descriptionElement = taskElement.querySelector("p:nth-of-type(1)");
     const assigneeElement = taskElement.querySelector("p:nth-of-type(2)");
     const dueDateElement = taskElement.querySelector("p:nth-of-type(3)");
-    
 
     //nameElement.textContent = updatedTask.name;
     nameElement.textContent = `Name: ${updatedTask.name}`;
     descriptionElement.textContent = `Description: ${updatedTask.description}`;
     assigneeElement.textContent = `Assignee: ${updatedTask.assignee}`;
     dueDateElement.textContent = `Due Date: ${updatedTask.dueDate}`;
-    
   }
 
   // Function to remove a task
@@ -98,8 +94,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Remove the task element from the DOM
     taskElement.remove();
   }
-
-
-
-  
 });

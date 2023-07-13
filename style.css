@@ -4,23 +4,19 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding: 15px;
   border-radius: 20px;
- 
- }
+}
 
 .container {
   opacity: 0.9;
-    
-  }
+}
 
 .box {
   margin-right: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  
- }
+}
 
- 
 .new-task {
   color: rgb(3, 3, 3);
   font-weight: 700px;
@@ -35,35 +31,31 @@ body {
 
 .task-name {
   color: black;
-  font-weight: 500;
-  
+  font-weight: 600;
 }
 
 .description {
   color: black;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .assign-to {
   color: black;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .due-date {
   color: black;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .box {
   border-radius: 10px;
-  
 }
 
 .task {
   margin-right: 45px;
-  
 }
-
 
 .buttons {
   text-align: center;
@@ -76,9 +68,15 @@ body {
 }
 
 h3 {
-  color: rgb(7, 7, 7);
- 
-  font-weight: 500px;
+  text-align: center;
+  color: rgb(3, 3, 3);
+  font-weight: 600px;
+}
+
+h4 {
+  text-align: center;
+  color: rgb(3, 3, 3);
+  font-weight: 600px;
 }
 
 .video-container {
@@ -89,9 +87,6 @@ h3 {
   min-height: 100%;
   width: auto;
   height: auto;
-  
-  z-index: -1;
-  
-  }
 
-  
+  z-index: -1;
+}
