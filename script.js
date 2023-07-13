@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       description: taskDescription,
       assignee: assignee,
       dueDate: dueDate,
-    };
+     };
 
     // Call a function to handle the task (e.g., add it to a task list, save it to a database, etc.)
     handleTask(task);
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const taskElement = document.createElement("div");
     taskElement.classList.add("task");
     taskElement.innerHTML = `
-      <h2>${task.name}</h2>
+      <p>Name: ${task.name}</p>
       <p>Description: ${task.description}</p>
       <p>Assignee: ${task.assignee}</p>
       <p>Due Date: ${task.dueDate}</p>
@@ -79,15 +79,18 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     // Update the task element in the DOM
-    const nameElement = taskElement.querySelector("h2");
+    const nameElement = taskElement.querySelector("p:nth-of-type(0)");
     const descriptionElement = taskElement.querySelector("p:nth-of-type(1)");
     const assigneeElement = taskElement.querySelector("p:nth-of-type(2)");
     const dueDateElement = taskElement.querySelector("p:nth-of-type(3)");
+    
 
-    nameElement.textContent = updatedTask.name;
+    //nameElement.textContent = updatedTask.name;
+    nameElement.textContent = `Name: ${updatedTask.name}`;
     descriptionElement.textContent = `Description: ${updatedTask.description}`;
     assigneeElement.textContent = `Assignee: ${updatedTask.assignee}`;
     dueDateElement.textContent = `Due Date: ${updatedTask.dueDate}`;
+    
   }
 
   // Function to remove a task
@@ -95,4 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Remove the task element from the DOM
     taskElement.remove();
   }
+
+
+
+  
 });

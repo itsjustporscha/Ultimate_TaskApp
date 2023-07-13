@@ -1,15 +1,29 @@
 html,
 body {
   margin: 0 auto;
-  background-color: lightgray;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  padding: 80px;
+  padding: 15px;
   border-radius: 20px;
-}
+ 
+ }
 
+.container {
+  opacity: 0.9;
+    
+  }
+
+.box {
+  margin-right: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+ }
+
+ 
 .new-task {
-  color: rgb(5, 108, 93);
-  font-weight: bold;
+  color: rgb(3, 3, 3);
+  font-weight: 700px;
   font-size: 36px;
 }
 
@@ -20,34 +34,36 @@ body {
 }
 
 .task-name {
-  color: rgb(5, 108, 93);
+  color: black;
+  font-weight: 500;
+  
 }
 
 .description {
-  color: rgb(5, 108, 93);
+  color: black;
+  font-weight: 500;
 }
 
 .assign-to {
-  color: rgb(5, 108, 93);
+  color: black;
+  font-weight: 500;
 }
 
 .due-date {
-  color: rgb(5, 108, 93);
+  color: black;
+  font-weight: 500;
 }
 
 .box {
-  background-color: aliceblue;
-  width: 500px;
-  height: 400px;
   border-radius: 10px;
-  padding: 50px;
-  margin: 20px;
+  
 }
 
-.to-do {
-  text-align: center;
-  color: rgb(16, 242, 204);
+.task {
+  margin-right: 45px;
+  
 }
+
 
 .buttons {
   text-align: center;
@@ -56,9 +72,26 @@ body {
 }
 
 .added-task1 {
-  text-align: center;
+  text-align: left;
 }
 
-.box.container {
-  text-align: center;
+h3 {
+  color: rgb(7, 7, 7);
+ 
+  font-weight: 500px;
 }
+
+.video-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 50%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  
+  z-index: -1;
+  
+  }
+
+  
